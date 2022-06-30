@@ -23,7 +23,7 @@ Follow [Ceres Installation](http://ceres-solver.org/installation.html), remember
 Clone the repository and catkin_make:
 ```
     cd ~/catkin_ws/src
-    git clone https://github.com/HeYijia/PL-VIO.git
+    git clone https://github.com/ahuzsg/Fast_PLVIO_code.git
     cd ../
     catkin_make
     source ~/catkin_ws/devel/setup.bash
