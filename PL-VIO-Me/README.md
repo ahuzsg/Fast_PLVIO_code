@@ -1,8 +1,7 @@
-# PL-VIO
-##  Tightly-Coupled Monocular Visual–Inertial Odometry Using Point and Line Features
+# Fast PL-VIO
+##Paper: Fast VIO With Point-Line Features Using Adaptive EDLines Algorithm
 
-Compared with point features, lines provide significantly more geometry structure information of the environment. We proposed PL-VIO a tightly-coupled monocular visual-inertial odometry system exploiting
-both point and line features. This code runs on **Linux**, and is fully integrated with **ROS**. 
+Compared with point features, lines provide significantly more geometry structure information of the environment. We proposed a fast line features detecter and matcher which is also performed better. This code runs on **Linux**, and is fully integrated with **ROS**. 
 
 ## 1. Prerequisites
 1.1 **Ubuntu** and **ROS**
@@ -20,7 +19,7 @@ If you install ROS Kinetic, please update **opencv3** with
 1.2. **Ceres Solver**
 Follow [Ceres Installation](http://ceres-solver.org/installation.html), remember to **make install**.
 
-## 2. Build PL-VIO on ROS
+## 2. Build Fast PL-VIO on ROS
 Clone the repository and catkin_make:
 ```
     cd ~/catkin_ws/src
@@ -74,29 +73,9 @@ Since line detection and matching are time consuming, we can record the feature 
 **Notice: ** Please play your bag with 0.2x speed since the time consuming from line detection.
 
 ## 5 Related Papers
-
-- **PL-VIO: Tightly-Coupled Monocular Visual–Inertial Odometry Using Point and Line Features**, Yijia He, Ji Zhao, Yue Guo, Wenhao He and Kui Yuan.
-
-```
-@article{he2018pl,
-  title={Pl-vio: Tightly-coupled monocular visual--inertial odometry using point and line features},
-  author={He, Yijia and Zhao, Ji and Guo, Yue and He, Wenhao and Yuan, Kui},
-  journal={Sensors},
-  volume={18},
-  number={4},
-  pages={1159},
-  year={2018},
-  publisher={Multidisciplinary Digital Publishing Institute}
-}
-```
-
-*If you use PL-VIO for your academic research, please cite our related papers.*
+*** paper: Fast VIO With Point-Line Features Using Adaptive EDLines Algorithm
 
 ## 6. Acknowledgements
 
-We use [VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) as our base line code. Thanks Dr. Qin Tong, Prof. Shen etc very much.
-
-## 7. Licence
-The source code is released under [GPLv3](http://www.gnu.org/licenses/) license.
-
-We are still working on improving the code reliability. For any technical issues, please contact Yijia He <heyijia_2013@163.com>.
+We use [pl-vio](https://github.com/HeYijia/PL-VIO.git) as our base line code. Thanks them very much.
+thier paper:Tightly-Coupled Monocular Visual–Inertial Odometry Using Point and Line Features
